@@ -17,6 +17,8 @@ public:
             }else{
                 winner = arr.at(i);
                 wins = 1;
+                if(wins == k) 
+                    return winner;
             }
         }
         return winner;
