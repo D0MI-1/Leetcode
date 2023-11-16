@@ -17,3 +17,16 @@ public:
         return *std::max_element(arr.begin(), arr.end());
     }
 };
+
+/*
+   int maximumElementAfterDecrementingAndRearranging(vector<int>& arr) {
+        sort(arr.begin(), arr.end());
+
+        int largest = 0;
+        for(auto num: arr) {
+            largest = min(largest + 1, num);
+        }
+
+        return largest;
+    }
+*/
