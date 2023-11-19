@@ -60,6 +60,7 @@ j = 2
 Best memory was worse than mine 
 ______________________________________________________________________________________________________________________________
 best run time submission 
+seems like only the stuff before the method speed things up 
 
 
 //m1
