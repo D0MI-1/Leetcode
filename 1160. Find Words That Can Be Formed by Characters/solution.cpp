@@ -37,3 +37,23 @@ public:
         return result;
     }
 };
+
+/*
+class Solution {
+public:
+    int countCharacters(vector<string>& words, string chars) {
+        int count[26]{};
+        int v, res = 0;
+        for(char& c : chars) ++count[c - 'a'];
+        for(string& word : words) {
+            int wCount[26]{};
+            bool valid = true;
+            for(char& c : word) ++wCount[c - 'a'];
+            for(int i = 0; i < 26; i++)
+                valid &= count[i] >= wCount[i];
+            if(valid) res += word.size();
+        }
+        return res;
+    }
+};
+*/
