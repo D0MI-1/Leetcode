@@ -28,3 +28,23 @@ public:
         return "";
     }
 };
+
+/*faster solution maybe regex just bloated
+class Solution {
+public:
+    string largestGoodInteger(string num) {
+        vector <int> temp;
+        for (int i=0;i<num.size()-2;i++){
+            if (num[i]==num[i+1] && num[i]==num[i+2]){
+                temp.push_back(stoi(string(1, num[i])));
+            }
+        }
+        sort(temp.begin(),temp.end());
+        string ans="";
+        if (temp.size()==0){return ans;}
+        ans+=to_string(temp[temp.size()-1]);
+        ans+=ans+ans;
+        return ans;
+    }
+};
+*/
