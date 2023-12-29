@@ -14,7 +14,7 @@ public:
             return count > 1 ? std::to_string(count).size() : 0;
         };
 
-        std::vector<std::vector<int>> dp(n + 1, std::vector<int>(k + 1, maxInt));
+        std::vector<std::vector<int>> dp(n + 1, std::vector<int>(k + 1, 9999));
         dp[0][0] = 0;
 
         for (int i = 1; i <= n; ++i) {
