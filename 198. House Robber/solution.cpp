@@ -4,7 +4,7 @@
 
 class Solution {
 public:
-    int rob(vector<int>& nums) {
+    int rob(std::vector<int>& nums) {
         if (nums.size() == 0) return 0;
 
         int prev1 = 0;
